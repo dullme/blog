@@ -1,0 +1,32 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.no-redis{
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  @apply no-underline;
+}
+
+.no-outline {
+  outline: none;
+}
+
+.tag {
+  @apply text-xs mr-3 mt-2 pl-2 pr-2 pt-1 pb-1 bg-grey-lightest text-grey;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.container {
+  @apply pl-4 pr-4;
+}
