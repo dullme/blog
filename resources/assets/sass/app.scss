@@ -1,3 +1,19 @@
+@charset "utf-8";
+
+// base
+@import "core/settings";          // color + font variables
+@import "core/normalize";         // css reset
+@import "core/mixins";            // utilities
+@import "core/base";              // base helpers and typographical styles
+
+// third party components
+//@import "components/bootstrap";   // buttons + dropdowns
+@import "components/prism";       // code highlighting
+
+@import "content/docs";
+
+
+
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
@@ -13,6 +29,10 @@ body {
 
 a {
   @apply no-underline;
+}
+
+ul {
+  list-style: none;
 }
 
 .no-outline {

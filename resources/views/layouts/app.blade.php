@@ -10,19 +10,15 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
-
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/markdown.css') }}" rel="stylesheet">
 
 </head>
-<body>
+<body class="docs language-php">
 <div id="app" class="min-h-screen flex flex-col">
     <header class="w-full pt-10 pb-10 {{ isset($bgHeadColor) ? $bgHeadColor : '' }} {{ isset($absolute)?$absolute:'' }}">
         <div class="container m-auto flex justify-between items-center">
@@ -54,5 +50,7 @@
         </div>
     </footer>
 </div>
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

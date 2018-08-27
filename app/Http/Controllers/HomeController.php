@@ -2,19 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Post;
+use App\Tag;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     /**
      * Show the application dashboard.
@@ -23,6 +17,14 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $tags = Tag::all();
+        $categories = Category::withCount('posts')->orderBy('posts_count', 'DESC')->get();
+        $posts = Post::with('category')
+            ->limit(10)
+            ->orderBy('id', 'DESC')
+            ->select(['id', 'category_id', 'image', 'essay', 'title', 'description', 'created_at'])
+            ->paginate(10);
+
+        return view('index', compact('tags', 'categories', 'posts'));
     }
 }

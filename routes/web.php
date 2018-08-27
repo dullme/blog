@@ -11,11 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/post/{id}', 'PostController@show')->name('post');
 
 Route::get('post', function () {
+
+    $a = '0008';
+
+
+    echo "%{$a}%";die;
     return view('post');
 });
 
@@ -28,7 +32,3 @@ Route::get('post3', function () {
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/post/1', 'PostController@show');
