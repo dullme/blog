@@ -40,7 +40,7 @@
         <div class="md:w-4/5 lg:w-4/6">
             <p class="text-black text-2xl pb-8 font-bold">{{ $post->title }}</p>
             <article>
-                {!! parseDown($post->content) !!}
+                {!! markdown($post->content) !!}
             </article>
         </div>
     </div>

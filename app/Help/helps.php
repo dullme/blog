@@ -1,5 +1,6 @@
 <?php
 
-function parseDown($content) {
-    return (new \Parsedown())->text($content);
+function markdown($text)
+{
+    return (new ParsedownExtra)->text($text);
 }
