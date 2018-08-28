@@ -28,7 +28,7 @@
                 <div class="mt-6">
                     <p class="mb-3 text-grey text-sm flex items-center">
                         <img class="mr-3" src="{{ asset('svg/clock.svg') }}"/>
-                        <span>{{ $post->created_at }}</span>
+                        <span>{{ $post->created_at->toFormattedDateString() }}</span>
                     </p>
                     <p class="text-grey text-sm flex items-center">
                         <img class="mr-3" src="{{ asset('svg/price-tag.svg') }}"/>
