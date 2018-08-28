@@ -3,7 +3,7 @@
 @section('content')
     @if($post->image)
         <div class="container m-auto">
-            <img class="w-full" src="{{ asset($post->image) }}">
+            <img class="w-full" src="{{ asset('storage/'.$post->image) }}">
         </div>
     @elseif($post->essay)
         <div class="bg-grey-lightest">

@@ -17,7 +17,7 @@
                     <div class="border border-grey-lighter mb-10">
                         @if($post->image)
                             <a class="block" href="{{ route('post', $post->id) }}">
-                                <img class="w-full" src="{{ asset($post->image) }}">
+                                <img class="w-full" src="{{ asset('storage/'.$post->image) }}">
                             </a>
                         @elseif($post->essay)
                             <a href="{{ route('post', $post->id) }}" class="block bg-grey-lightest flex-col p-4">
