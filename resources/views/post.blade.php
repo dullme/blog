@@ -12,7 +12,7 @@
             <div class="h-84" style="background-color: rgb(0,0,0,.1)"></div>
         </div>
     @elseif($post->essay)
-        <div class="bg-grey-lightest">
+        <div class="m-auto bg-cover bg-no-repeat h-74 bg-grey-lightest">
             <div class="container m-auto flex p-6">
                 <img class="w-10 h-10 mr-6" src="{{ asset('svg/quotes-left.svg') }}">
                 <div class="mt-3 text-black leading-loose">

@@ -3883,6 +3883,10 @@ button,
   height: 16rem;
 }
 
+.h-74 {
+  height: 22rem;
+}
+
 .h-84 {
   height: 32rem;
 }
@@ -8370,6 +8374,10 @@ article h1 {
     height: 16rem;
   }
 
+  .sm\:h-74 {
+    height: 22rem;
+  }
+
   .sm\:h-84 {
     height: 32rem;
   }
@@ -12785,6 +12793,10 @@ article h1 {
 
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:h-74 {
+    height: 22rem;
   }
 
   .md\:h-84 {
@@ -17204,6 +17216,10 @@ article h1 {
     height: 16rem;
   }
 
+  .lg\:h-74 {
+    height: 22rem;
+  }
+
   .lg\:h-84 {
     height: 32rem;
   }
@@ -21619,6 +21635,10 @@ article h1 {
 
   .xl\:h-64 {
     height: 16rem;
+  }
+
+  .xl\:h-74 {
+    height: 22rem;
   }
 
   .xl\:h-84 {
