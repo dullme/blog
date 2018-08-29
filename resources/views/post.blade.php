@@ -2,7 +2,7 @@
 
 @section('content')
     @if($post->image)
-        <div class="container m-auto">
+        <div class="m-auto">
             <img class="w-full" src="{{ asset('storage/'.$post->image) }}">
         </div>
     @elseif($post->essay)
@@ -17,8 +17,8 @@
     @endif
 
 
-    <div class="container m-auto p-10 flex md:flex-no-wrap flex-wrap-reverse">
-        <div class="md:w-1/5 lg:w-2/6 hidden md:block">
+    <div class="container m-auto mb-9 flex md:flex-no-wrap flex-wrap-reverse">
+        <div class="mt-9 md:w-1/5 lg:w-2/6 hidden md:block">
             <div class="mb-8 flex flex-col">
                 <img class="w-1/2 rounded-full" src="{{ asset('images/avatar.jpg') }}">
                 <div class="pt-5 leading-normal">
@@ -38,8 +38,8 @@
             </div>
         </div>
         <div class="md:w-4/5 lg:w-4/6">
-            <p class="text-black text-2xl pb-8 font-bold">{{ $post->title }}</p>
             <article>
+                <h1>{{ $post->title }}</h1>
                 {!! markdown($post->content) !!}
             </article>
         </div>

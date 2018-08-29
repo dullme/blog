@@ -6328,6 +6328,21 @@ ul {
   padding-right: 1rem;
 }
 
+article ul {
+  list-style: unset;
+}
+
+article ul li {
+  margin: 8px;
+  line-height: 1.65;
+}
+
+article h1 {
+  font-size: 48px;
+  font-weight: 200;
+  margin: .67em 0;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;

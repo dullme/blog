@@ -51,3 +51,23 @@ ul {
 .container {
   @apply pl-4 pr-4;
 }
+
+article{
+
+  ul {
+    list-style: unset;
+  }
+
+  ul li {
+    margin: 8px;
+    line-height: 1.65;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 200;
+    margin: 0.67em 0;
+  }
+
+}
+
