@@ -6386,6 +6386,31 @@ article h1 {
   margin: .67em 0;
 }
 
+article h2 {
+  margin-top: 15px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+article h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+article h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+article blockquote {
+  background: #00b19e !important;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
