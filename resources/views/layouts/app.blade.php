@@ -22,14 +22,18 @@
 <div id="app" class="min-h-screen flex flex-col">
     <header class="w-full pt-10 pb-10 {{ isset($bgHeadColor) ? $bgHeadColor : '' }} {{ isset($absolute)?$absolute:'' }}">
         <div class="container m-auto flex justify-between items-center">
-            <img class="w-14" src="{{ asset('images/logo-black.png') }}"/>
+            @if(isset($absolute))
+                <img class="w-14" src="{{ asset('images/logo-white.png') }}"/>
+            @else
+                <img class="w-14" src="{{ asset('images/logo-black.png') }}"/>
+            @endif
             <nav>
-                <a class="text-black pl-9" href="{{ url('/') }}">首页</a>
-                <a class="text-black pl-9" href="#">归档</a>
-                <a class="text-black pl-9" href="#">标签</a>
-                <a class="text-black pl-9" href="#">分类</a>
-                <a class="text-black pl-9" href="#">相册</a>
-                <a class="text-black pl-9" href="#">关于</a>
+                <a class="{{ isset($absolute)?'text-white':'text-black'}} pl-9" href="{{ url('/') }}">首页</a>
+                <a class="{{ isset($absolute)?'text-white':'text-black'}} pl-9" href="#">归档</a>
+                <a class="{{ isset($absolute)?'text-white':'text-black'}} pl-9" href="#">标签</a>
+                <a class="{{ isset($absolute)?'text-white':'text-black'}} pl-9" href="#">分类</a>
+                <a class="{{ isset($absolute)?'text-white':'text-black'}} pl-9" href="#">相册</a>
+                <a class="{{ isset($absolute)?'text-white':'text-black'}} pl-9" href="#">关于</a>
             </nav>
         </div>
     </header>

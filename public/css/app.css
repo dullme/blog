@@ -3883,6 +3883,10 @@ button,
   height: 16rem;
 }
 
+.h-84 {
+  height: 32rem;
+}
+
 .h-auto {
   height: auto;
 }
@@ -4417,6 +4421,10 @@ button,
   margin: -2rem;
 }
 
+.-m-10 {
+  margin: -10rem;
+}
+
 .-m-px {
   margin: -1px;
 }
@@ -4489,6 +4497,16 @@ button,
 .-mx-8 {
   margin-left: -2rem;
   margin-right: -2rem;
+}
+
+.-my-10 {
+  margin-top: -10rem;
+  margin-bottom: -10rem;
+}
+
+.-mx-10 {
+  margin-left: -10rem;
+  margin-right: -10rem;
 }
 
 .-my-px {
@@ -4611,6 +4629,22 @@ button,
 
 .-ml-8 {
   margin-left: -2rem;
+}
+
+.-mt-10 {
+  margin-top: -10rem;
+}
+
+.-mr-10 {
+  margin-right: -10rem;
+}
+
+.-mb-10 {
+  margin-bottom: -10rem;
+}
+
+.-ml-10 {
+  margin-left: -10rem;
 }
 
 .-mt-px {
@@ -6288,6 +6322,7 @@ button,
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: initial;
+  background-color: #f0f4f7;
 }
 
 .no-redis {
@@ -6326,6 +6361,11 @@ ul {
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+article {
+  margin-left: 0 !important;
+  padding: 0 !important;
 }
 
 article ul {
@@ -8331,6 +8371,10 @@ article h1 {
     height: 16rem;
   }
 
+  .sm\:h-84 {
+    height: 32rem;
+  }
+
   .sm\:h-auto {
     height: auto;
   }
@@ -8865,6 +8909,10 @@ article h1 {
     margin: -2rem;
   }
 
+  .sm\:-m-10 {
+    margin: -10rem;
+  }
+
   .sm\:-m-px {
     margin: -1px;
   }
@@ -8937,6 +8985,16 @@ article h1 {
   .sm\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .sm\:-my-10 {
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+  }
+
+  .sm\:-mx-10 {
+    margin-left: -10rem;
+    margin-right: -10rem;
   }
 
   .sm\:-my-px {
@@ -9059,6 +9117,22 @@ article h1 {
 
   .sm\:-ml-8 {
     margin-left: -2rem;
+  }
+
+  .sm\:-mt-10 {
+    margin-top: -10rem;
+  }
+
+  .sm\:-mr-10 {
+    margin-right: -10rem;
+  }
+
+  .sm\:-mb-10 {
+    margin-bottom: -10rem;
+  }
+
+  .sm\:-ml-10 {
+    margin-left: -10rem;
   }
 
   .sm\:-mt-px {
@@ -12714,6 +12788,10 @@ article h1 {
     height: 16rem;
   }
 
+  .md\:h-84 {
+    height: 32rem;
+  }
+
   .md\:h-auto {
     height: auto;
   }
@@ -13248,6 +13326,10 @@ article h1 {
     margin: -2rem;
   }
 
+  .md\:-m-10 {
+    margin: -10rem;
+  }
+
   .md\:-m-px {
     margin: -1px;
   }
@@ -13320,6 +13402,16 @@ article h1 {
   .md\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .md\:-my-10 {
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+  }
+
+  .md\:-mx-10 {
+    margin-left: -10rem;
+    margin-right: -10rem;
   }
 
   .md\:-my-px {
@@ -13442,6 +13534,22 @@ article h1 {
 
   .md\:-ml-8 {
     margin-left: -2rem;
+  }
+
+  .md\:-mt-10 {
+    margin-top: -10rem;
+  }
+
+  .md\:-mr-10 {
+    margin-right: -10rem;
+  }
+
+  .md\:-mb-10 {
+    margin-bottom: -10rem;
+  }
+
+  .md\:-ml-10 {
+    margin-left: -10rem;
   }
 
   .md\:-mt-px {
@@ -17097,6 +17205,10 @@ article h1 {
     height: 16rem;
   }
 
+  .lg\:h-84 {
+    height: 32rem;
+  }
+
   .lg\:h-auto {
     height: auto;
   }
@@ -17631,6 +17743,10 @@ article h1 {
     margin: -2rem;
   }
 
+  .lg\:-m-10 {
+    margin: -10rem;
+  }
+
   .lg\:-m-px {
     margin: -1px;
   }
@@ -17703,6 +17819,16 @@ article h1 {
   .lg\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .lg\:-my-10 {
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+  }
+
+  .lg\:-mx-10 {
+    margin-left: -10rem;
+    margin-right: -10rem;
   }
 
   .lg\:-my-px {
@@ -17825,6 +17951,22 @@ article h1 {
 
   .lg\:-ml-8 {
     margin-left: -2rem;
+  }
+
+  .lg\:-mt-10 {
+    margin-top: -10rem;
+  }
+
+  .lg\:-mr-10 {
+    margin-right: -10rem;
+  }
+
+  .lg\:-mb-10 {
+    margin-bottom: -10rem;
+  }
+
+  .lg\:-ml-10 {
+    margin-left: -10rem;
   }
 
   .lg\:-mt-px {
@@ -21480,6 +21622,10 @@ article h1 {
     height: 16rem;
   }
 
+  .xl\:h-84 {
+    height: 32rem;
+  }
+
   .xl\:h-auto {
     height: auto;
   }
@@ -22014,6 +22160,10 @@ article h1 {
     margin: -2rem;
   }
 
+  .xl\:-m-10 {
+    margin: -10rem;
+  }
+
   .xl\:-m-px {
     margin: -1px;
   }
@@ -22086,6 +22236,16 @@ article h1 {
   .xl\:-mx-8 {
     margin-left: -2rem;
     margin-right: -2rem;
+  }
+
+  .xl\:-my-10 {
+    margin-top: -10rem;
+    margin-bottom: -10rem;
+  }
+
+  .xl\:-mx-10 {
+    margin-left: -10rem;
+    margin-right: -10rem;
   }
 
   .xl\:-my-px {
@@ -22208,6 +22368,22 @@ article h1 {
 
   .xl\:-ml-8 {
     margin-left: -2rem;
+  }
+
+  .xl\:-mt-10 {
+    margin-top: -10rem;
+  }
+
+  .xl\:-mr-10 {
+    margin-right: -10rem;
+  }
+
+  .xl\:-mb-10 {
+    margin-bottom: -10rem;
+  }
+
+  .xl\:-ml-10 {
+    margin-left: -10rem;
   }
 
   .xl\:-mt-px {

@@ -21,6 +21,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   line-height: initial;
+  background-color: #F0F4F7;
 }
 
 .no-redis{
@@ -53,7 +54,8 @@ ul {
 }
 
 article{
-
+  margin-left: 0 !important;
+  padding: 0 !important;
   ul {
     list-style: unset;
   }
