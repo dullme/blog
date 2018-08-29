@@ -16,7 +16,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    @yield('style')
 </head>
 <body class="docs language-php">
 <div id="app" class="min-h-screen flex flex-col">

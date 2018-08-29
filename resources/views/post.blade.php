@@ -1,8 +1,14 @@
 @extends('layouts.app', $post->image == ''?['bgHeadColor' => 'bg-grey-lightest']:['absolute' => 'absolute'])
-
+@section('style')
+    <style>
+        body {
+            background-color: #F0F4F7;
+        }
+    </style>
+@endsection
 @section('content')
     @if($post->image)
-        <div class="m-auto bg-cover bg-no-repeat h-84" style="background-image: url({{ asset('storage/'.$post->image) }})"></div>
+        <div class="m-auto bg-cover bg-no-repeat h-84" style="background-image: url({{ asset('storage/'.$post->image) }});"></div>
     @elseif($post->essay)
         <div class="bg-grey-lightest">
             <div class="container m-auto flex p-6">
