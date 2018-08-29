@@ -8,7 +8,9 @@
 @endsection
 @section('content')
     @if($post->image)
-        <div class="m-auto bg-cover bg-no-repeat h-84" style="background-image: url({{ asset('storage/'.$post->image) }});"></div>
+        <div class="m-auto bg-cover bg-no-repeat h-84" style="background-image: url({{ asset('storage/'.$post->image) }})">
+            <div class="h-84" style="background-color: rgb(0,0,0,.1)"></div>
+        </div>
     @elseif($post->essay)
         <div class="bg-grey-lightest">
             <div class="container m-auto flex p-6">
