@@ -1,28 +1,30 @@
-@extends('layouts.app', $post->image == ''?['bgHeadColor' => 'bg-grey-lightest', 'postPage' => true]:['absolute' => 'absolute', 'postPage' => true])
-@section('style')
-    <style>
-        body {
-            background-color: #F0F4F7;
-        }
-    </style>
-@endsection
-@section('content')
+@extends('layouts.app')
+
+@section('header')
     @if($post->image)
-        <div class="m-auto bg-cover bg-no-repeat h-84" style="background-image: url({{ asset('storage/'.$post->image) }})">
-            <div class="h-84" style="background-color: rgb(0,0,0,.1)"></div>
-        </div>
-    @elseif($post->essay)
-        <div class="m-auto bg-cover bg-no-repeat h-74 bg-grey-lightest">
-            <div class="container m-auto flex p-6">
-                <img class="w-10 h-10 mr-6" src="{{ asset('svg/quotes-left.svg') }}">
-                <div class="mt-3 text-black leading-loose">
-                    <p class="md:text-xl">{{ $post->essay }}</p>
+        <header class="w-full pt-10 h-84 bg-cover bg-no-repeat" style="background-image: url({{ asset('storage/'.$post->image) }}">
+            @include('layouts.title')
+            <div class="mask mt-23"></div>
+        </header>
+    @else
+        <header class="w-full pt-10 header-bg-color">
+            @include('layouts.title')
+            <div class="container pt-15 pb-15">
+                <div class="m-auto flex p-6">
+                    <div class="mt-3 text-white leading-loose">
+                        <p class="text-2xl">{{ $post->essay }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="overlay"></div>
+            <div class="mask"></div>
+        </header>
     @endif
+@endsection
 
-    <div class="container m-auto mb-9 bg-white -mt-10" style="border-radius: 4px;-webkit-box-shadow: 0 0 25px 0 rgba(0,0,0,.08);box-shadow: 0 0 25px 0 rgba(0,0,0,.08);">
+@section('content')
+<div class="flex-1">
+    <div class="container m-auto mb-9 bg-white">
         <div class="flex md:flex-no-wrap flex-wrap-reverse md:p-10">
             <div class="mt-9 md:w-1/5 lg:w-2/6 hidden md:block">
                 <div class="mb-8 flex flex-col">
@@ -51,4 +53,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
