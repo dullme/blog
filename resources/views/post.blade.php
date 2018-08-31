@@ -1,4 +1,4 @@
-@extends('layouts.app', $post->image == ''?['bgHeadColor' => 'bg-grey-lightest']:['absolute' => 'absolute'])
+@extends('layouts.app', $post->image == ''?['bgHeadColor' => 'bg-grey-lightest', 'postPage' => true]:['absolute' => 'absolute', 'postPage' => true])
 @section('style')
     <style>
         body {

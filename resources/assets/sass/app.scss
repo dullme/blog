@@ -23,6 +23,52 @@ body {
   line-height: initial;
 }
 
+header {
+  position: relative;
+}
+
+.header-bg-color {
+  background-image: linear-gradient(-90deg,#ff8321,#f4645f);
+  background-image: -webkit-gradient(linear,right top,left top,from(#ff8321),to(#f4645f));
+}
+
+header .overlay:before {
+  left: -680px;
+  width: calc(100% + 680px);
+}
+
+header .overlay:after {
+  left: -660px;
+  width: calc(100% + 2000px);
+}
+
+header .overlay:before, header .overlay:after{
+  content: "";
+  background: url(../images/pattern_2.png) repeat-x 50%;
+  background-size: 1440px;
+  bottom: 0;
+  display: block;
+  height: 115px;
+  position: absolute;
+}
+
+header .mask {
+  background-color: #f7fafc;
+  -webkit-mask-image: url(../images/pattern_sm.png);
+  mask-image: url(../images/pattern_sm.png);
+  -webkit-mask-size: 1440px;
+  mask-size: 1440px;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  -webkit-mask-position: center;
+  mask-position: center;
+  height: 55px;
+}
+
+header .overlay:after, header .overlay:before {
+  bottom: -35px;
+}
+
 .no-redis{
   -webkit-appearance: none;
   border-radius: 0;
@@ -50,6 +96,18 @@ ul {
 
 .container {
   @apply pl-4 pr-4;
+}
+
+.head-link a {
+  @apply opacity-75;
+}
+
+.head-link a:hover {
+  @apply opacity-100;
+}
+
+.head-link .active{
+  opacity: 1 !important;
 }
 
 article{
