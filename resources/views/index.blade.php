@@ -2,7 +2,7 @@
 
 
 @section('header')
-    <header class="w-full pt-10 header-bg-color">
+    <header class="w-full index-header-bg-color">
         <div class="overlay"></div>
         @include('layouts.title')
         <div class="container pt-15 pb-15">

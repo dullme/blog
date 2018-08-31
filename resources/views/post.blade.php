@@ -2,12 +2,15 @@
 
 @section('header')
     @if($post->image)
-        <header class="w-full pt-10 h-84 bg-cover bg-no-repeat" style="background-image: url({{ asset('storage/'.$post->image) }}">
-            @include('layouts.title')
-            <div class="mask mt-23"></div>
+        <header class="w-full bg-cover bg-no-repeat" style="background-image: url({{ asset('storage/'.$post->image) }})">
+            <div class="bg-black-mask">
+                @include('layouts.title')
+                <div class="mask mt-23"></div>
+                <div></div>
+            </div>
         </header>
     @else
-        <header class="w-full pt-10 header-bg-color">
+        <header class="w-full post-header-bg-color">
             @include('layouts.title')
             <div class="container pt-15 pb-15">
                 <div class="m-auto flex p-6">
