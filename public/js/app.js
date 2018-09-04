@@ -108,6 +108,10 @@ window.jQuery = window.$ = __webpack_require__(3);
 // These all require jQuery
 __webpack_require__(6);
 
+$(document).ready(function () {
+    $("body").removeClass("loading");
+});
+
 window.Vue = __webpack_require__(7);
 
 /**
@@ -119,7 +123,7 @@ window.Vue = __webpack_require__(7);
 Vue.component('example-component', __webpack_require__(11));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app'
 });
 
 /***/ }),
