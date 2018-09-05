@@ -3967,6 +3967,10 @@ button,
   margin: 4rem;
 }
 
+.m-23 {
+  margin: 23rem;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -4083,6 +4087,16 @@ button,
 .mx-12 {
   margin-left: 4rem;
   margin-right: 4rem;
+}
+
+.my-23 {
+  margin-top: 23rem;
+  margin-bottom: 23rem;
+}
+
+.mx-23 {
+  margin-left: 23rem;
+  margin-right: 23rem;
 }
 
 .my-auto {
@@ -4279,6 +4293,22 @@ button,
 
 .ml-12 {
   margin-left: 4rem;
+}
+
+.mt-23 {
+  margin-top: 23rem;
+}
+
+.mr-23 {
+  margin-right: 23rem;
+}
+
+.mb-23 {
+  margin-bottom: 23rem;
+}
+
+.ml-23 {
+  margin-left: 23rem;
 }
 
 .mt-auto {
@@ -6328,6 +6358,63 @@ body {
   line-height: initial;
 }
 
+header {
+  overflow: hidden;
+  position: relative;
+}
+
+.index-header-bg-color {
+  background-image: linear-gradient(-90deg, #ff8321, #f4645f);
+  background-image: -webkit-gradient(linear, right top, left top, from(#ff8321), to(#f4645f));
+}
+
+.post-header-bg-color {
+  background-color: #00b19e;
+}
+
+header .overlay:before {
+  left: -680px;
+  width: calc(100% + 680px);
+}
+
+header .overlay:after {
+  left: -660px;
+  width: calc(100% + 2000px);
+}
+
+header .overlay:before,
+header .overlay:after {
+  content: "";
+  background: url(../images/pattern_2.png) repeat-x 50%;
+  background-size: 1440px;
+  bottom: 0;
+  display: block;
+  height: 115px;
+  position: absolute;
+}
+
+header .mask {
+  background-color: #f7fafc;
+  -webkit-mask-image: url(../images/pattern_sm.png);
+          mask-image: url(../images/pattern_sm.png);
+  -webkit-mask-size: 1440px;
+          mask-size: 1440px;
+  -webkit-mask-repeat: repeat-x;
+          mask-repeat: repeat-x;
+  -webkit-mask-position: center;
+          mask-position: center;
+  height: 57px;
+}
+
+header .overlay:after,
+header .overlay:before {
+  bottom: -35px;
+}
+
+object svg {
+  fill: #fff !important;
+}
+
 .no-redis {
   -webkit-appearance: none;
   border-radius: 0;
@@ -6364,6 +6451,24 @@ ul {
 .container {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.head-link a {
+  opacity: .6;
+}
+
+.head-link a:hover {
+  opacity: 1;
+}
+
+.head-link .active {
+  opacity: 1 !important;
+}
+
+.bg-black-mask {
+  background-color: rgba(0, 0, 0, .1);
+  width: 100%;
+  height: 100%;
 }
 
 article {
@@ -6405,10 +6510,6 @@ article h4 {
   font-weight: 700;
   margin-top: 35px;
   margin-bottom: 10px;
-}
-
-article blockquote {
-  background: #00b19e !important;
 }
 
 @media (min-width: 576px) {
@@ -8483,6 +8584,10 @@ article blockquote {
     margin: 4rem;
   }
 
+  .sm\:m-23 {
+    margin: 23rem;
+  }
+
   .sm\:m-auto {
     margin: auto;
   }
@@ -8599,6 +8704,16 @@ article blockquote {
   .sm\:mx-12 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .sm\:my-23 {
+    margin-top: 23rem;
+    margin-bottom: 23rem;
+  }
+
+  .sm\:mx-23 {
+    margin-left: 23rem;
+    margin-right: 23rem;
   }
 
   .sm\:my-auto {
@@ -8795,6 +8910,22 @@ article blockquote {
 
   .sm\:ml-12 {
     margin-left: 4rem;
+  }
+
+  .sm\:mt-23 {
+    margin-top: 23rem;
+  }
+
+  .sm\:mr-23 {
+    margin-right: 23rem;
+  }
+
+  .sm\:mb-23 {
+    margin-bottom: 23rem;
+  }
+
+  .sm\:ml-23 {
+    margin-left: 23rem;
   }
 
   .sm\:mt-auto {
@@ -12904,6 +13035,10 @@ article blockquote {
     margin: 4rem;
   }
 
+  .md\:m-23 {
+    margin: 23rem;
+  }
+
   .md\:m-auto {
     margin: auto;
   }
@@ -13020,6 +13155,16 @@ article blockquote {
   .md\:mx-12 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .md\:my-23 {
+    margin-top: 23rem;
+    margin-bottom: 23rem;
+  }
+
+  .md\:mx-23 {
+    margin-left: 23rem;
+    margin-right: 23rem;
   }
 
   .md\:my-auto {
@@ -13216,6 +13361,22 @@ article blockquote {
 
   .md\:ml-12 {
     margin-left: 4rem;
+  }
+
+  .md\:mt-23 {
+    margin-top: 23rem;
+  }
+
+  .md\:mr-23 {
+    margin-right: 23rem;
+  }
+
+  .md\:mb-23 {
+    margin-bottom: 23rem;
+  }
+
+  .md\:ml-23 {
+    margin-left: 23rem;
   }
 
   .md\:mt-auto {
@@ -17325,6 +17486,10 @@ article blockquote {
     margin: 4rem;
   }
 
+  .lg\:m-23 {
+    margin: 23rem;
+  }
+
   .lg\:m-auto {
     margin: auto;
   }
@@ -17441,6 +17606,16 @@ article blockquote {
   .lg\:mx-12 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .lg\:my-23 {
+    margin-top: 23rem;
+    margin-bottom: 23rem;
+  }
+
+  .lg\:mx-23 {
+    margin-left: 23rem;
+    margin-right: 23rem;
   }
 
   .lg\:my-auto {
@@ -17637,6 +17812,22 @@ article blockquote {
 
   .lg\:ml-12 {
     margin-left: 4rem;
+  }
+
+  .lg\:mt-23 {
+    margin-top: 23rem;
+  }
+
+  .lg\:mr-23 {
+    margin-right: 23rem;
+  }
+
+  .lg\:mb-23 {
+    margin-bottom: 23rem;
+  }
+
+  .lg\:ml-23 {
+    margin-left: 23rem;
   }
 
   .lg\:mt-auto {
@@ -21746,6 +21937,10 @@ article blockquote {
     margin: 4rem;
   }
 
+  .xl\:m-23 {
+    margin: 23rem;
+  }
+
   .xl\:m-auto {
     margin: auto;
   }
@@ -21862,6 +22057,16 @@ article blockquote {
   .xl\:mx-12 {
     margin-left: 4rem;
     margin-right: 4rem;
+  }
+
+  .xl\:my-23 {
+    margin-top: 23rem;
+    margin-bottom: 23rem;
+  }
+
+  .xl\:mx-23 {
+    margin-left: 23rem;
+    margin-right: 23rem;
   }
 
   .xl\:my-auto {
@@ -22058,6 +22263,22 @@ article blockquote {
 
   .xl\:ml-12 {
     margin-left: 4rem;
+  }
+
+  .xl\:mt-23 {
+    margin-top: 23rem;
+  }
+
+  .xl\:mr-23 {
+    margin-right: 23rem;
+  }
+
+  .xl\:mb-23 {
+    margin-bottom: 23rem;
+  }
+
+  .xl\:ml-23 {
+    margin-left: 23rem;
   }
 
   .xl\:mt-auto {

@@ -4,6 +4,10 @@ window.jQuery = window.$ = require('./vendor/jquery.js');
 // These all require jQuery
 require('./vendor/prism.js');
 
+$(document).ready(function(){
+    $("body").removeClass("loading");
+});
+
 window.Vue = require('vue');
 
 /**

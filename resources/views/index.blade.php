@@ -1,7 +1,22 @@
 @extends('layouts.app')
 
+
+@section('header')
+    <header class="w-full index-header-bg-color">
+        <div class="overlay"></div>
+        @include('layouts.title')
+        <div class="container pt-15 pb-15">
+            <div class="text-white text-center text-5xl font-bold">
+                <span>Erocode</span>
+            </div>
+        </div>
+        <div class="mask"></div>
+    </header>
+@endsection
+
 @section('content')
-    <section class="pt-4 pb-8">
+<div class="flex-1">
+    <section class="pt-8 pb-8">
         <div class="container m-auto">
             <p class="text-2xl mb-3 font-bold">Blog</p>
             <p class="mb-2 text-grey">念念不忘，必有回响。</p>
@@ -21,7 +36,7 @@
                             </a>
                         @elseif($post->essay)
                             <a href="{{ route('post', $post->id) }}" class="block bg-grey-lightest flex-col p-4">
-                                <p class="mb-3"><img class="p-4 bg-white rounded-full" src="{{ asset('svg/quotes-left.svg') }}"></p>
+                                <p class="mb-3"><img class="p-4 bg-white rounded-full w-12" src="{{ asset('svg/quotes-left.svg') }}"></p>
                                 <div class="text-black leading-loose">
                                     <p class="text-sm">{{ $post->essay}}</p>
                                 </div>
@@ -107,4 +122,5 @@
             </div>
         </div>
     </div>
+</div>
 @endsection
