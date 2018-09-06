@@ -55,6 +55,30 @@
                 </article>
             </div>
         </div>
+
+        <nav class="post-navigation">
+            @if($prev)
+                <a href="{{ route('post', $prev->id) }}" class="post-navigation-next hover:text-green">
+                    <span class="pr-3">
+                        <i class="fa fa-long-arrow-left"></i>
+                    </span>
+                    <span class="">
+                        <strong class="post-navigation--post-title">{{ $prev->title }}</strong>
+                    </span>
+                </a>
+            @endif
+            @if($next)
+                <a href="{{ route('post', $next->id) }}" class="post-navigation-prev hover:text-green">
+                    <span class="pl-3">
+                        <i class="fa fa-long-arrow-right"></i>
+                    </span>
+                    <span>{{ $next->title }}</span>
+                </a>
+            @endif
+
+
+        </nav>
+
     </div>
 </div>
 @endsection

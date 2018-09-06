@@ -113,7 +113,7 @@
                     <p class="text-xl mb-3 font-bold">最新帖子</p>
                     @foreach($posts as $post)
                         <div class="pt-2 pb-2">
-                            <a href="#" class="text-sm text-grey">{{ $post->title }}</a>
+                            <a href="{{ route('post', $post->id) }}" class="text-sm latest-post">{{ $post->title }}</a>
                         </div>
                     @endforeach
                 </div>

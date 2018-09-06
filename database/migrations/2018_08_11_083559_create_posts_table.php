@@ -21,6 +21,7 @@ class CreatePostsTable extends Migration
             $table->string('title')->comment('文章标题');
             $table->string('description')->comment('描述');
             $table->text('content')->comment('详情');
+            $table->timestamp('published_at')->nullable()->comment('发布时间');
             $table->timestamps();
         });
     }

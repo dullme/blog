@@ -23,6 +23,7 @@ class HomeController extends Controller
             ->limit(10)
             ->orderBy('id', 'DESC')
             ->select(['id', 'category_id', 'image', 'essay', 'title', 'description', 'created_at'])
+            ->published()
             ->paginate(10);
 
         return view('index', compact('tags', 'categories', 'posts'));

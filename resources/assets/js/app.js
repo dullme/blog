@@ -1,3 +1,4 @@
+import 'font-awesome/css/font-awesome.min.css'
 // jQuery core
 window.jQuery = window.$ = require('./vendor/jquery.js');
 

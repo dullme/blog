@@ -6471,6 +6471,42 @@ ul {
   height: 100%;
 }
 
+.latest-post {
+  color: #898989;
+}
+
+.latest-post:hover {
+  color: #00b19e;
+}
+
+.post-navigation {
+  padding: 50px 15px;
+}
+
+.post-navigation a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #898989;
+  max-width: 40%;
+}
+
+.post-navigation-next {
+  float: left;
+}
+
+.post-navigation-prev {
+  float: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
 article {
   margin-left: 0 !important;
   padding: 0 !important;
