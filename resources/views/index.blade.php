@@ -67,11 +67,9 @@
             </div>
 
             <div class="md:ml-4 md:w-1/4 flex-1">
-                <form class="flex mb-8">
-                    <input class="bg-grey-lighter p-3 no-outline w-full no-redis text-grey-dark" type="search" placeholder="Search site..."
-                           title="Search for:">
-                    <input class="bg-grey-lighter text-grey pl-4 pr-4 pt-3 pb-3 cursor-pointer uppercase" type="submit"
-                           value="Go">
+                <form class="flex mb-8" action="{{ route('home') }}" method="get">
+                    <input class="bg-grey-lighter p-3 no-outline w-full no-redis text-grey-dark" type="search" name="search" placeholder="Search title..." title="Search for:">
+                    <input class="bg-grey-lighter text-grey pl-4 pr-4 pt-3 pb-3 cursor-pointer uppercase" type="submit" value="Go">
                 </form>
 
                 <div class="mb-8 flex-col hidden md:block">
@@ -99,7 +97,7 @@
                     <div class="flex flex-col">
                         @foreach($categories as $category)
                             <div class="pt-2 pb-2">
-                                <a href="#" class="text-sm text-green mr-1">
+                                <a href="{{ route('home', ['category' => $category->id]) }}" class="text-sm text-green mr-1">
                                     <span>{{ $category->name }}</span>
                                     <span class="text-grey">({{ $category->posts_count }})</span>
                                 </a>
@@ -111,7 +109,7 @@
 
                 <div class="mb-8 hidden md:block">
                     <p class="text-xl mb-3 font-bold">最新帖子</p>
-                    @foreach($posts as $post)
+                    @foreach($newPosts as $post)
                         <div class="pt-2 pb-2">
                             <a href="{{ route('post', $post->id) }}" class="text-sm latest-post">{{ $post->title }}</a>
                         </div>
